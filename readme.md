@@ -1,0 +1,1 @@
+The following project is an NLP Project which does named entity recoginition, emotion analysis and many more to be added soon. The flask framework was used for the project and Pycharm IDE. All the NLP analysis are done by hitting an API from komprehend.io.
