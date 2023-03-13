@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion</title>
+</head>
+<body>
+  <form action="/perform_emotion" method="post">
+      <label>Type Your Text Here</label><br><br>
+      <textarea name="emotion_text"></textarea><br>
+      <input type="submit" value="Analyze Emotions">
+  </form>
+{% if response %}
+  {% for i in response.values() %}
+        {% for j, k in i.items() %}
+            <p>{{ j }}: {{ k|string }} </p>
+        {% endfor %}
+  {% endfor %}
+{% endif %}
+
+
+</body>
+</html>
